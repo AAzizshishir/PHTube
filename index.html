@@ -16,32 +16,43 @@
     <script defer src="./js/script.js"></script>
   </head>
   <body>
-
     <!-- Header -->
     <header class="w-11/12 mx-auto">
-        <nav class="navbar border-b-2 border-gray-200 py-4">
-            <div class="navbar-start">
-              <div>
-                <img class="w-32" src="./assets/Logo.png">
-              </div>
-            </div>
-            <div class="navbar-center">
-                <input type="text" placeholder="Search here" class="input" />
-            </div>
-            <div class="navbar-end">
-              <button class="btn bg-red-600 text-white">Blog</button>
-            </div>
-          </nav>
+      <nav class="navbar border-b-2 border-gray-200 py-4">
+        <div class="navbar-start">
+          <div>
+            <img class="w-32" src="./assets/Logo.png" />
+          </div>
+        </div>
+        <div class="navbar-center">
+          <input type="text" placeholder="Search here" class="input" />
+        </div>
+        <div class="navbar-end">
+          <button class="btn bg-red-600 text-white">Blog</button>
+        </div>
+      </nav>
 
-          <!-- Category Button -->
-           <div id="category-container" class="flex items-center justify-center gap-4 py-4">
-            <div>
-                <button class="btn btn-sm bg-red-600 text-white">All</button>
-            </div>
-            
-           </div>
+      <!-- Category Button -->
+      <div
+        id="category-container"
+        class="flex items-center justify-center gap-4 py-4"
+      >
+        <div>
+          <button onclick="loadVideos()" class="btn btn-sm bg-red-600 text-white">All</button>
+        </div>
+      </div>
     </header>
 
-    
+    <!-- Main -->
+    <section
+      id="main-container"
+      class="w-11/12 mx-auto mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+    >
+
+    <div id="icon" class="text-center flex flex-col items-center justify-center col-span-full">
+        <img src="./assets/Icon.png">
+        <h2 class="mt-3 font-bold text-2xl">Oops!! Sorry, There is no <br> content here</h2>
+    </div>
+    </section>
   </body>
 </html>
